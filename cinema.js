@@ -52,5 +52,5 @@ function alterarStatusEmCartaz(array, codigo, status){
     }
 }
 
-alterarStatusEmCartaz(catalogo, 3, true)
+/*alterarStatusEmCartaz(catalogo, 3, true)
 console.log(catalogo)
