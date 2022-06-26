@@ -22,7 +22,6 @@ const catalogo = [
     }
 
 ]
-
 //console.log(catalogo)
 
 // ADICIONAR UM FILME AO CATALOGO//
