@@ -1,7 +1,6 @@
 {
   "name": "cinehouse",
   "version": "1.0.0",
-  "description": "",
   "main": "cinema.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "validator": "^13.7.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felpsaints/cinehouseDH.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felpsaints/cinehouseDH/issues"
+  },
+  "homepage": "https://github.com/felpsaints/cinehouseDH#readme",
+  "description": ""
 }

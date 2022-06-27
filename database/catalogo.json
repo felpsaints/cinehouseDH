@@ -1,0 +1,20 @@
+{ 
+"data": [ 
+    { 
+        "titulo": "Harry Potter",
+        "codigo": 1,
+        "duracao": 2.5,
+        "atores": "Emma Watson",
+        "anoDeLancamento": 2022,
+        "emCartaz": true
+    },
+    { 
+        "titulo": "O Hobbit",
+        "codigo": 2,
+        "duracao": 2.0,
+        "atores": "Martin Freeman",
+        "anoDeLancamento": 2021,
+        "emCartaz": false
+    }
+]
+}

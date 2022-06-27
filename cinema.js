@@ -1,39 +1,17 @@
-var cinema = "Cine: TrueMovie"
+var catalogo = require('./database/catalogo.json') //esse require está puxando o catalogo da pasta database, deixando o código mais limpo.
 
-console.log(cinema)
 
-const catalogo = [ 
-    { 
-        titulo: "Harry Potter",
-        codigo: 1,
-        duracao: 2.5,
-        atores: "Emma Watson",
-        anoDeLancamento: 2022,
-        emCartaz: true
-    },
-
-    { 
-        titulo: "O Hobbit",
-        codigo: 2,
-        duracao: 2.0,
-        atores: "Martin Freeman",
-        anoDeLancamento: 2021,
-        emCartaz: false
-    }
-
-]
-//console.log(catalogo)
-
-// ADICIONAR UM FILME AO CATALOGO//
+//Adicionar um filme ao catalogo
 
 function adicionarFilme(codigo, nome, duracao, ano, atores, emCartaz){
     return {codigo, nome, duracao, ano, atores, emCartaz};
     };
-    catalogo.push(adicionarFilme(3, 'Senhor dos Aneis', 3.00, 2001, "Ellija Hood", false));
-//console.log('Filme adicionado com sucesso!', catalogo);
+    catalogo.data.push(adicionarFilme(3, 'Senhor dos Aneis', 3.00, 2001, "Ellija Hood", false));
+//console.log('Filme adicionado com sucesso!', catalogo.data);
 
 
-// BUSCAR UM FILME PELO CODIGO
+//Bucar um filme pelo código
+
 function buscarFilme(array,codigo) {
     for (let i = 0; i < array.length; i++){ 
         if (array[i].codigo === codigo) {
@@ -41,7 +19,11 @@ function buscarFilme(array,codigo) {
         }
     }
 }
-//buscarFilme(catalogo,3)
+
+//buscarFilme(catalogo.data,3)
+
+
+//Alterar status do filme
 
 function alterarStatusEmCartaz(array, codigo, status){
     for (let index = 0; index <array.length; index++){ 
@@ -51,5 +33,5 @@ function alterarStatusEmCartaz(array, codigo, status){
     }
 }
 
-/*alterarStatusEmCartaz(catalogo, 3, true)
-console.log(catalogo)
+//alterarStatusEmCartaz(catalogo, 3, true)
+//console.log(catalogo.data)
